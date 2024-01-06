@@ -208,3 +208,99 @@ body {
         border-right: 5px solid red;
     }
 }
+
+
+
+/* mediaScreen */
+
+
+@media screen and (max-width:1415px) {
+    #Rath {
+        font-size: 60px;
+
+    }
+}
+
+@media screen and (max-width:1175px) {
+    #Rath {
+        font-size: 50px;
+
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .parent {
+        position: relative;
+        width: 95%;
+        display: inline-block;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        display: inline-flex;
+        width: 90%;
+        height: 50vh;
+        display: block;
+        margin: auto;
+    }
+
+    .content-top {
+        display: inline-flex;
+    }
+
+    .content-bottom {
+        display: inline-flex;
+    }
+
+    .Btns {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: end;
+        width: 90%;
+        height: 10vh;
+        margin: -4rem 0 4rem 0;
+    }
+
+    .btn {
+        width: 30%;
+        position: inherit;
+    }
+
+    #btn-crt {
+        position: inherit;
+        top: inherit;
+        left: inherit;
+    }
+
+    #btn-clean {
+        top: inherit;
+        left: inherit;
+    }
+
+    #logo {
+
+
+        width: auto;
+        position: inherit;
+    }
+
+    #Rath {
+        width: auto;
+        font-size: 80px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #Rath {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    #Rath {
+        font-size: 50px;
+    }
+}
