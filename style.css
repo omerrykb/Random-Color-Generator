@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(-45deg, #56007b, #330058, #000070, #007800, #9e9e00, #814000, #8d0000);
+    background-size: 7000%;
+    animation: bg-body 15s linear reverse infinite;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.bg-dark-theme {
+    background: #000000cc;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent {
+    position: relative;
+    width: 80%;
+    height: 90%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    height: 90%;
+}
+
+.content-top {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hexCode {
+    color: bisque;
+}
+
+.content-bottom {
+    width: 100%;
+    height: 80%;
+    border-radius: 5rem;
+    transition: all 1.5s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.Btns {
+    width: 20%;
+    height: 90%;
+    position: relative;
+}
+
+.btn {
+    border: none;
+    height: 7vh;
+    width: 60%;
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Rubik Glitch', system-ui;
+    left: 40px;
+    border-radius: 6px;
+    transition: all .5s;
+}
+
+.btn:hover {
+    border: 1px solid black;
+    opacity: .8;
+}
+
+#btn-crt {
+    background: green;
+    top: 200px;
+}
+
+#btn-crt:hover {
+    background: rgb(0, 35, 0);
+    color: #17ff00;
+    font-size: 21px;
+}
+
+#btn-clean {
+    background: rgb(219, 5, 5);
+    top: 270px;
+}
+
+#btn-clean:hover {
+    background: rgb(38, 0, 0);
+    color: red;
+    font-size: 15px;
+}
+
+/* logo */
+#logo {
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    animation: logo .1s linear infinite;
+}
+
+#Rath {
+    color: #000000cc;
+    text-align: end;
+    font-family: 'Rubik Glitch', system-ui;
+    font-size: 75px;
+    font-style: italic;
+    animation: logo 3s linear infinite;
+    background: linear-gradient(235deg, #17ff00, rgb(0, 56, 0), #17ff00);
+    background-size: 300%;
+    background-clip: text;
+    text-shadow: 6px 6px 3px rgba(0, 0, 0, 0.6);
+}
+
+/*! animasyonlar */
+
+@keyframes logo {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+}
+
+@keyframes bg-body {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 150%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes temizlemeAnimasyonu {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes olusturmaAnimasyonu {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes RenkTablosuAnimasyonu {
+    0% {
+        border-top: 5px solid green;
+        border-left: 5px solid blue;
+        border-bottom: 5px solid yellow;
+        border-right: 5px solid red;
+    }
+
+    25% {
+        border-top: 5px solid red;
+        border-left: 5px solid green;
+        border-bottom: 5px solid blue;
+        border-right: 5px solid yellow;
+    }
+
+    50% {
+        border-top: 5px solid yellow;
+        border-left: 5px solid red;
+        border-bottom: 5px solid green;
+        border-right: 5px solid blue;
+    }
+
+    75% {
+        border-top: 5px solid blue;
+        border-left: 5px solid yellow;
+        border-bottom: 5px solid red;
+        border-right: 5px solid green;
+    }
+
+    100% {
+        border-top: 5px solid green;
+        border-left: 5px solid blue;
+        border-bottom: 5px solid yellow;
+        border-right: 5px solid red;
+    }
+}
